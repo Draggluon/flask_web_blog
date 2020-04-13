@@ -8,7 +8,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
-app.secret_key = "b'3\x17\xbd\x9cc~V\xeb\xcc\x13\xe4\x01\x9ba\xf5\x8f\x95\xb0\x1f\xcb\x92F\xaa\x0e'"
+app.secret_key = "add_you_secrect_key"
 
 class BlogPosts(db.Model):
     id = db.Column(db.Integer, primary_key=True)
